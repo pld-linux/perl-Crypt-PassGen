@@ -9,14 +9,14 @@ Summary:	Crypt::PassGen Perl module - generate a random password
 Summary(pl):	Modu³ Perla Crypt::PassGen - generuj±cy losowe has³a
 Name:		perl-Crypt-PassGen
 Version:	0.03
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-FHS.patch
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Storable
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	words
 BuildConflicts:	wordlist
 Requires:	words
@@ -39,7 +39,8 @@ jêzyku.
 %patch0 -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -55,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitelib}/Crypt/PassGen.pm
-%{perl_sitelib}/Crypt/PassGenWordFreq.dat
+%{perl_vendorlib}/Crypt/PassGen.pm
+%{perl_vendorlib}/Crypt/PassGenWordFreq.dat
 %{_mandir}/man3/*
