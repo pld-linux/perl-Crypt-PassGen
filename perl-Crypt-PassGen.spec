@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla Crypt::PassGen - generuj±cy losowe has³a
 Name:		perl-Crypt-PassGen
 Version:	0.04
 Release:	1
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5ccb497f6e33680b22a0041e1f397a2a
