@@ -1,14 +1,14 @@
---- Crypt-PassGen-0.02/PassGen.pm.old	Thu Aug  1 09:53:56 2002
-+++ Crypt-PassGen-0.02/PassGen.pm	Thu Aug  1 09:53:56 2002
+--- Crypt-PassGen-0.03/PassGen.pm.old	Thu Aug  1 09:53:56 2002
++++ Crypt-PassGen-0.03/PassGen.pm	Thu Aug  1 09:53:56 2002
 @@ -50,7 +50,7 @@
  # The frequency file should be stored in the same place as this
  # module [use Config]
  
 -$DEFAULT_DICT = '/usr/dict/words';  # Unix specific
 +$DEFAULT_DICT = '/usr/share/dict/words';  # Unix specific
- $DEFAULT_FREQFILE = "$Config{installsitelib}/Crypt/PassGenWordFreq.dat";
  
- # This is the cache of frequency data to prevent us going to
+ $DEFAULT_FREQFILE = File::Spec->catfile($Config{installsitelib},
+ 					"Crypt",
 @@ -119,7 +119,7 @@
  combination. The frequency table will vary depending on the language
  of the input file. 
