@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	PassGen
+%define		pdir	Crypt
+%define		pnam	PassGen
 Summary:	Crypt::PassGen Perl module - generate a random password
 Summary(pl):	Modu³ Perla Crypt::PassGen - generuj±cy losowe has³a
 Name:		perl-Crypt-PassGen
