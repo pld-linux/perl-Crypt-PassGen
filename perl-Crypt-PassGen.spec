@@ -13,6 +13,7 @@ Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	e83aaba9481b8d961b12e92d282c6b05
 Patch0:		%{name}-FHS.patch
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Storable
