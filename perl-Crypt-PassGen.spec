@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	PassGen
 Summary:	Crypt::PassGen Perl module - generate a random password
-Summary(pl.UTF-8):   Moduł Perla Crypt::PassGen - generujący losowe hasła
+Summary(pl.UTF-8):	Moduł Perla Crypt::PassGen - generujący losowe hasła
 Name:		perl-Crypt-PassGen
 Version:	0.04
 Release:	2
