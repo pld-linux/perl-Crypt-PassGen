@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# Do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Crypt
 %define		pnam	PassGen
+%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::PassGen Perl module - generate a random password
 Summary(pl.UTF-8):	Moduł Perla Crypt::PassGen - generujący losowe hasła
 Name:		perl-Crypt-PassGen
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e8aad942e5d407654d726f9c9a9d359a
+URL:		http://search.cpan.org/dist/Crypt-PassGen/
 Patch0:		%{name}-FHS.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
