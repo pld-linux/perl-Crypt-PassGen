@@ -4,7 +4,6 @@
 
 %define		pdir	Crypt
 %define		pnam	PassGen
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::PassGen Perl module - generate a random password
 Summary(pl.UTF-8):	Moduł Perla Crypt::PassGen - generujący losowe hasła
 Name:		perl-Crypt-PassGen
